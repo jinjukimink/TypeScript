@@ -70,7 +70,6 @@ const SignIn = () => {
                     <div>
                         <form className="flex flex-col gap-[16px]">
                             {/* <input ref={els} className="inter h-[44px] text-sm border border-[#4F4F4F] py-[13.5px] px-[16px] rounded-lg placeholder-[#ACACAC]" />{" "} */}
-
                             <Input ref={elsN} type="text" name="name" value={formState.name} onChange={onChange} className="bg-[#FFFFFF] w-[325px] h-[45px]" placeholder="Enter Your Name"/>
                             <Input ref={elsE} type="text" name="email" value={formState.email} onChange={onChange} className="bg-[#FFFFFF] w-[325px] h-[45px]" placeholder="someone@example.com"/>
                             {type==="Sign" && <Input ref={elsP} type="text" name="password" value={formState.password} onChange={onChange} className="bg-[#FFFFFF] w-[325px] h-[45px]" placeholder="Enter Password"/>}
@@ -81,7 +80,6 @@ const SignIn = () => {
                         <Button className="bg-[#4F4F4F] text-[14px] w-[325px] h-[45px] border border-black"
                         onClick={onClickLogin}
                         >{type==="Sign" ? "Login":"Sign"}</Button>
-                        
                         <Button className="w-[325px] h-[45px] text-[14px] border border-black text-[#4f4f4f]"
                         onClick={onClickSign}
                         >Go To {type==="Sign" ? "Log":"Sign "}in</Button>
