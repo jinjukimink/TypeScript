@@ -7,5 +7,4 @@ function useCity(initialValue:boolean){
     }
     return [city,onClickCity];
 }
-
 export default useCity
